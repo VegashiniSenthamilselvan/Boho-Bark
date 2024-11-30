@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet shop</title>
+   
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One');
+        body 
+        {
+            background-color:white;
+            color: black;
+            font-family:'Sonsie One', cursive;
+            margin: 0;
+            text-align: justify;
+            height: 100vh;
+            width:100%;
+            
+           
+        }
+        header
+        {
+            
+            /*background: linear-gradient(to right, #E6E6FA, #DA70D6);*/
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color: black;
+            padding: 10px 20px;
+            font-family: 'Sonsie One', cursive;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 0 6px 6px rgba(155,154,154);
+            font-size:40px;
+            
+
+        }
+        nav {
+            
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            padding: -90px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 24px;
+            
+        }
+        .lo {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1000;
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .lo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .lo .user {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .lo button {
+            width: 50%;
+            padding: 10px;
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        sibt{
+            height: 20%;
+            width: 20%;
+        }
+        .bf button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'Sonsie One', cursive;
+            margin-left: 198px;
+            margin-top: 60px;
+           
+        }
+        form
+        {
+            font-size: 24px;
+        }
+        .lo form 
+        {
+             font-family: Sonsie One', cursive;
+            
+           
+        }
+        .lo form label
+        {
+            font-family: Sonsie One', cursive;
+            
+        }
+        .lo form input, .lo-form button 
+        {
+            font-family: Sonsie One', cursive;
+        }
+        .pic
+        {
+            margin-top: 10px;
+        }
+        .para
+        {
+            margin-top: -550px;
+            margin-left: 700px;
+        }
+        .para p
+        {
+            text-align:left;
+        }
+        .pr{
+            padding: 20px;
+        }
+        html 
+     {
+    scroll-behavior: smooth;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    footer {
+        background: linear-gradient(to left, #E6E6FA, #DA70D6);
+       color: black;
+       text-align: center;
+       padding: 10px 0;
+       margin-top: 40px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <p>Boho & Bark</p>
+        <nav>
+        <ul>
+            <p><a href="landingpage.html">HOME</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p><a href="landingpage.html">REVIEWS</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p><a href="#footer">CONTACT US</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </ul>
+        </nav>
+
+            <div class="bf">
+                <button id="sibt" style="font-size: 20px;font-family: 'Sonsie One', cursive">Sign In</button>
+            </div>
+      
+            <div class="lo" id="loginBox">
+                <form action="http://127.0.0.1:5500/html/receipe.html" method="post">
+                    <label for="username">Username:</label>
+                    <input class="user" type="text" id="username" name="Username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input class="user" type="password" id="password" name="Password" required><br><br>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>       
+    </header>
+            <div class="pic">
+                <img src="c11.jpg" height="600px" width="700px">
+            </div>
+            <br><br>
+            <div class="para">
+                <h2>Minerals and Vitamins for Cows
+                </h2><br>
+                <p>Raising calves is by far the most difficult operation in a dairy farming enterprise, requiring a great deal of management skills, application and constant attention. Feeding of calves during the first 3 months is very crucial. In our country calf mortality constitutes one of the major causes for the loss in the dairy sector. Proper feeding during this stage will avoid calf mortality. There is still lack of awareness on colostrum feeding which is very important for offering immunity to the newborn.</p>
+                <br>
+                <p>The feed for dairy and working animals is not suitable for calves. The calves have to be fed with special ration which has high protein content to match the rapid growth of the calves. Needless to say, green and dry fodder as required along with potable clean drinking water should be provided.</p>
+                <img src="f.svg" height="200px" width="700px">
+                <br>
+            </div>
+                <div class="pr">
+                    <center>
+                        <img src="c14.jpg" height="600px" width="700px">
+                        </center>
+                        <br>
+                       <p>What is the best food for cows?</p>
+                       <br>
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;Cows' natural diet consists mainly of grasses, legumes, alfalfa, clover, and hay. They are grazing animals, after all. Many cows also enjoy fruits as delicious snacks. In fact, the average cow eats 2% of their body weight a day, which averages out to 24-26 pounds of food each day.</p>
+                       <br>
+                       <p>Is the cattle feed business profitable?</p>
+                       <br>
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;The cattle feed business in India is profitable. India has a vast diversity of different species of cattle. You just need a good investment to produce high profit in this field. Moreover, there is a good amount of competition in the market. Therefore, you must be patient enough to establish your business.</p>
+                       <br>
+                       <p> Is it easy to look after cattle?</p>
+                       <br>
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;Taking care of cattle is not a very difficult task. You just need to be careful about their nutrition demand and hygiene. It becomes very easy to take care of cattle with a proper diet and hygiene.</p>
+                       <br><br>
+                       <img src="c10.png">
+
+                </div>
+               
+                <footer id="footer">
+                    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+                    <p>Contact Us:456783423</p>
+                    <address>19,Anna Nagar.tirupur-641604.</address>
+                </footer>
+          
+               <script>
+                            const sibt = document.getElementById('sibt');
+                            const loginBox = document.getElementById('loginBox');
+                    
+                            sibt.addEventListener('click', function() {
+                                if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+                                    loginBox.style.display = 'block';
+                                } else {
+                                    loginBox.style.display = 'none';
+                                }
+                            });
+                </script>
+</body>
+</html>

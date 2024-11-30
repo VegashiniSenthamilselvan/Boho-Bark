@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet shop</title>
+   
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One');
+        body 
+        {
+            background-color:white;
+            color: black;
+            font-family:'Sonsie One', cursive;
+            margin: 0;
+            text-align: justify;
+            height: 100vh;
+            width:100%;
+            
+           
+        }
+        header
+        {
+            
+            /*background: linear-gradient(to right, #E6E6FA, #DA70D6);*/
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color: black;
+            padding: 10px 20px;
+            font-family: 'Sonsie One', cursive;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 0 6px 6px rgba(155,154,154);
+            font-size:40px;
+            
+
+        }
+        nav {
+            
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            padding: -90px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 24px;
+            
+        }
+        .lo {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1000;
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .lo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .lo .user {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .lo button {
+            width: 50%;
+            padding: 10px;
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        sibt{
+            height: 20%;
+            width: 20%;
+        }
+        .bf button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'Sonsie One', cursive;
+            margin-left: 198px;
+            margin-top: 60px;
+           
+        }
+        form
+        {
+            font-size: 24px;
+        }
+        .lo form 
+        {
+             font-family: Sonsie One', cursive;
+            
+           
+        }
+        .lo form label
+        {
+            font-family: Sonsie One', cursive;
+            
+        }
+        .lo form input, .lo-form button 
+        {
+            font-family: Sonsie One', cursive;
+        }
+        
+        .bx 
+        {
+            width: 1270px;
+            height: 419px;
+            margin: 95px auto; 
+            padding: 20px;
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            border-radius: 30px;
+            text-align: center; 
+            box-shadow: -8px -8px 15px rgba(246, 250, 188, 0.76);
+        }
+
+        .bx img 
+        {
+            max-width: 200px; 
+            max-height: 200px;
+            border-radius: 10px; 
+            margin: 10px;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top; 
+            box-shadow: -8px -8px 15px rgba(249, 200, 200, 0.76);
+        }
+
+      footer 
+      {
+          background: linear-gradient(to left, #E6E6FA, #DA70D6);
+          color: black;
+          text-align: center;
+          padding: 10px;
+          margin-top: 30px;
+      }
+      
+     .bx img:hover 
+        {
+            transform: scale(1.1); 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+            z-index: 1; 
+        }
+        .left
+        {
+            width: 400px;
+            height: auto;
+            margin: 55px; 
+            padding: 20px;
+            background: linear-gradient(to left, #E6E6FA, #da70d661);
+            border-radius: 30px;
+            text-align: center; 
+            box-shadow: -8px -8px 15px rgba(246, 250, 188, 0.76);
+        }
+        .right
+        {
+            width: 800px;
+            height: auto;
+            margin-top: -5320px;
+            margin-left: 540px;
+            padding: 20px;
+            background: linear-gradient(to left, #E6E6FA, #da70d661);
+            border-radius: 30px;
+            justify-content: center;
+            box-shadow: -8px -8px 15px rgba(246, 250, 188, 0.76);
+        }
+        .rating
+         {
+            display: flex;
+            flex-direction: row-reverse; 
+            
+        }
+        .rating input
+        {
+            display: none; 
+            align-items: center;
+
+           
+        }
+        .rating label 
+        {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #f4f4f5;
+            margin-right: 5px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            transition: background-color 0.25s;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px; 
+            margin: 0 10px; 
+        }
+        .rating input:checked + label 
+        {
+            background-color: rgb(181, 71, 212); 
+        }
+        .profile 
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .profile img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro2
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro2 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .dfo
+    {
+        cursor: pointer;
+    }
+    .pro3
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro3 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro4
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro4 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro5
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro5 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro6
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro6 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro7
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro7 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro8
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro8 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro10
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro10 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro9
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro9 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro11
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro11 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    .pro12
+        {
+        display: flex;
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        }
+    .pro12 img 
+    {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+    footer {
+        background: linear-gradient(to left, #E6E6FA, #DA70D6);
+       color: black;
+       text-align: center;
+       padding: 10px 0;
+       margin-top: 40px;
+     }
+     html 
+     {
+    scroll-behavior: smooth;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Boho & Bark</p>
+        <nav>
+            <ul>
+                <p><a href="#">HOME</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="#review">REVIEWS</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="#footer">CONTACT US</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </ul>
+        </nav>
+
+            <div class="bf">
+                <button id="sibt" style="font-size: 20px;font-family: 'Sonsie One', cursive">Sign In</button>
+            </div>
+      
+            <div class="lo" id="loginBox">
+                <form action="http://127.0.0.1:5500/html/receipe.html" method="post">
+                    <label for="username">Username:</label>
+                    <input class="user" type="text" id="username" name="Username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input class="user" type="password" id="password" name="Password" required><br><br>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>
+       
+    </header>
+            <div class="bx">
+                <img src="cat1.jpg" >
+                <img src="dog3.jpg" >
+                <img src="bird.jpg" >
+                <img src="rabbit.jpg">
+                <img src="fish.avif">
+                <img src="cow1.jpg">
+                <img src="chick.jpg">
+                <img src="co.jpg">
+                <img src="goat.webp">
+                <img src="hen2.jpg">
+                <img src="bi.webp">
+                <img src="duck.webp">
+            </div>
+           
+            <div class="left">
+                <p>Rate This:</p>
+                <div class="rating">
+                    
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">5</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">4</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">3</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">2</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">1</label>
+                </div>
+                <br>
+                <div class="re" id="review">
+                    <br><br>
+                        <div class="profile">
+                            <img src="p" > 
+                            <span>VEGASHINI.S</span> 
+                        </div>
+                        <p>We bought a Labrador puppy ,it was very healthy and playful. it was pure breed. very good place to buy good quality dogs. highly recomended. So many varieties of dog puppyies available, so nice to see the puppies all adorable puppies they have only original and they deal with only original breeds Best to buy</p>
+                        <br><br>
+                        <div class="pro2">
+                            <img src="p1">
+                            <span>DHARANI.S</span>
+                        </div>
+                            <p>All leading brand pet foods available here. I`m not sure whether the price is less or not but you can get everything for pet here. Quick response.Very friendly, good products, provides adequate information. They also provide service assists for grooming, breeding.</p>
+                        <br><br>
+                            <div class="pro3">
+                            <img src="p2.png">
+                            <span>RENGUA.S</span>
+                        </div>
+                        <br><br>
+                        <p>Lovely aviary. I got two macaws and a conure from this aviary. The birds are very healthy and active. The owners are very caring and keep in touch with me to guide me in every aspect of managing the birds.</p>
+                        <div class="pro4">
+                            <img src="p3">
+                            <span>SANTHIYA</span>
+                        </div>
+                        <p>I visited Barko&Bark and was impressed by their variety of cats available for adoption, including playful kittens and serene older cats. The cats appeared well-cared for, with healthy coats and a clean environment. The staff were knowledgeable and friendly, providing helpful information about each cat and the adoption process. Overall,offers a welcoming atmosphere and is a recommended place for anyone looking to adopt a feline companion.</p>
+                        <br><br>
+                        <div class="pro5">
+                            <img src="p4">
+                            <span>SUBI.G</span>
+                        </div>
+                        <p>I recently visited Boho&Bark where I found a diverse selection of fish species available for purchase. The tanks were well-maintained, with clear water and healthy fish swimming actively. The staff were knowledgeable and provided helpful advice on fish care and tank setup. </p>
+                        <br><br>
+                        <div class="pro6">
+                            <img src="p6.jpg">
+                            <span>MADHU.J</span>
+                        </div>
+                        <p>In a symphony of flavors orchestrated by nature's finest, the duck emerges as a maestro of the culinary world. Its tender flesh, draped in a caramelized skin that crackles with each bite, unveils a richness that dances between savory and sublime.</p>
+                        <br><br>
+                        <div class="pro7">
+                            <img src="p6.jpg">
+                            <span>DEVA.J</span>
+                        </div>
+                        <p>The bird, a canvas of flavor, unveils tender succulence and delicate nuances. Whether roasted or stewed, its essence captivates with each bite—a testament to culinary finesse and nature's bounty. Each tender morsel sings of tradition and invites the palate to embrace the essence of simplicity and sophistication.</p>
+                        <br><br>
+                        <div class="pro8">
+                            <img src="p2.png">
+                            <span>SWETHA.R</span>
+                        </div>
+                        <p>Hen" by Hiromi Kawakami is a delicate exploration of human connection and loneliness, centered around a writer's fascination with her neighbor's hen named Lily. Through simple yet profound interactions, Kawakami beautifully portrays the complexities of relationships and the search for meaning in ordinary moments.</p>
+                        <br><br>
+                        <div class="pro9">
+                            <img src="p1">
+                            <span>SOWMIYA.R</span>
+                        </div>
+                        <p>Goat by Anne Fleming is a poignant and witty novel that follows the life of Kid, a young girl growing up on a goat farm. Through Kid's eyes, Fleming explores themes of family dynamics, resilience, and the bond between humans and animals. The narrative is both heartwarming and thought-provoking, offering a unique perspective on rural life and the challenges of adolescence.</p>
+                        <br><br>
+                        <div class="pro10">
+                            <img src="p6.jpg">
+                            <span>DHARSHINI.S</span>
+                        </div>
+                        <p>Cow by Beat Sterchi is a powerful and evocative novel that delves into the life of a Swiss farmer named John. Through John's perspective, Sterchi paints a vivid portrait of rural life, the challenges of farming, and the deep bond between a farmer and his cows. The novel explores themes of identity, tradition, and the changing landscape of agriculture, offering a compelling glimpse into a world where the rhythms of nature and human existence intertwine.</p>
+                        <br><br>
+                        <div class="pro11">
+                            <img src="p6.jpg">
+                            <span>HARSHINI.S</span>
+                        </div>
+                        <p>User Reviews
+                            RelevantFriends RatingsLatestHigh to Low
+                            Search reviews
+                            Dr.Pramod Shanker photo
+                            Dr.Pramod Shanker
+                            5 reviews, 0 follower
+                            9 Jun 2021
+                            "Pets Lifestyle" is one of the finest pet shop in Bhopal where you could find everything from best breed of puppy to food products with reasonable price as per your need. It's owner, Mr. Vishnu Dutt Tripathi is highly knowledgeable, courteous and well informed guy. I have four dogs including Husky, Pomeranian and a German Shepherd N Pets Lifestyle is the perfect place for me to drop in any time.</p>
+                        <br><br>
+                        <div class="pro12">
+                            <img src="p8">
+                            <span>SIVA SAKTHI.S</span>
+                        </div>
+                        <p>This is the best pet shop I have seen in central India. I felt dumbstruck seeing the quality of products and variety which I never saw in any pet shop in India.These gentle giants, with their distinctive black-and-white Holstein pattern or various other breeds, symbolize sustenance and rural life worldwide. From the serene landscapes they graze to the milk they provide, cows are integral to human survival and cultural heritage. Their complex digestive system and social behaviors fascinate scientists and farmers alike, highlighting their adaptive prowess in diverse environments.</p>
+                        <br><br><br><br><br>
+
+                </div>
+            </div>
+
+            
+            <div class="right">
+                <div class="dfo">
+                    
+                    <center>
+                        <h2>Crafting a Tailored Diet for Your Furry Friend</h2><br>
+                        <a href="dog.html">
+                            <img src="food.webp" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                    <p>Our dreams are alike in terms of adorning our four-legged family. To take it further, we envision an approach that's paw-some in its own ways. Happiness, comfort & support, these are our royalties, our pillars on which we stand to be there for our pet's every need. We feel paw-sitive to be able to build a society for our pets and create the world a better place for them.</p>
+                    <br>
+                </div>
+
+                <div class="df1">
+                    <center>
+                        <h2> Crafting Delicious Meals for Your Cat</h2><br>
+                        <a href="cat.html">
+                            <img src="co.webp" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                    <p>Kittens are extremely curious and energetic animals with boundless energy. Creating a safe and enriching environment at home will cater to your kitten’s playful side, provide much needed physical and mental stimulus, and positively impact their health and development for the rest of their feline life. Genetic studies show that domestic cats are only partially domesticated, which means that several traits of their wild ancestors are still present in our feline companions.</p>
+                </div>
+
+                <div class="df2">
+                    <center>
+                        <h2> Delighting Your Rabbit's Taste Buds</h2><br>
+                        <a href="rabbit.html">
+                            <img src="a1.webp" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                    <p>Rabbit food provides the essential nutrients your pet needs for a long, healthy life, natural ingredients that aid in digestive health. Naturally preserved for ideal freshness, formulated with fatty acids to support heart, brain and visual functions.Fresh water should be available at all times. The following feeding amounts can be used as a starting point for one pet. Adjust the portions to maintain proper weight and if additional pets are fed.</p>
+
+                </div>
+
+                <div class="df5">
+                    <center>
+                        <h2>Nourishing Your Fish with Quality Cuisine</h2><br>
+                        <a href="fish.html">
+                            <img src="fi.jpg" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                   <p>Providing the right nutrition and environment for your fish is a fundamental requirement. Taking care of these two important aspects will help you with keeping your fish healthy. We have an extensive variety of fish items that will meet all your fish food necessities. You can purchase these items online in India at normal cost. Also, keep an eye out for promotional sales and discounts that we offer on our various products on the site, this will help you save money.</p>
+                </div>
+
+                <div class="df6">
+                    <center>
+                        <h2>Fulfilling Your Duck's Appetite</h2><br>
+                        <a href="duck.html".html">
+                            <img src="d2.jpg" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                  <p>Ducks have specific dietary needs that differ from other domesticated pets, and it’s important to meet those requirements to ensure they thrive in captivity. From proteins and grains to important vitamins and minerals, we’ll cover everything you need to know about providing a balanced and nutritious diet for your duck.</p>
+                </div>
+
+                <div class="df7">
+                    <center>
+                        <h2>Elevating Your Birds' Dining Experience</h2><br>
+                        <a href="bird.html">
+                            <img src="bir.jpg" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                  <p>Shop for bird food and accessories from Supertails to give your feathered friend the best care possible. We offer a wide selection of food for birds, including Parrot food, Love Birds food, Cockatiel Bird food, Budgie food, and more, all made from high-quality ingredients to ensure optimal nutrition for your pet. Our bird food selection is diverse, with options for various types of birds and dietary needs.</p>
+                </div>
+
+                <div class="df8">
+                    <center>
+                        <h2>Delicious Dining for Your Goats</h2><br>
+                        <a href="goat.html">
+                            <img src="g1.jpg" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                  <p>Platina Goat & Sheep Feed is a high-quality, balanced feed that is specifically formulated for goats and sheep. It is made with high-quality ingredients and contains all essential nutrients for growth, development, and milk production. It is also easy to digest and highly palatable, making it a great choice for even the pickiest eaters.</p>
+                </div>
+
+                <div class="df9">
+                    <center>
+                        <h2> Nourishing Your Feathered Flock</h2><br>
+                        <a href="cock.html">
+                            <img src="cock.png" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                  <p>The chicken of today are the descendants of jungle fowl. The mature fowl hens of yesteryears used to lay about 12 eggs per year that too only during the breeding season. Genetic selection over generations and scientific feeding methods have resulted in the development of chicken that can lay almost 330 eggs per year.During the laying phase, the diet should be optimized to improve egg production in terms of egg numbers and egg size. The feed also helps to safeguard the health and maintain the desired body weight. In particular, inclusion level of calcium is increased for better egg shell production.
+                  </p>
+                </div>
+
+                <div class="df10">
+                    <center>
+                        <h2>Hay and Forage for Cows</h2><br>
+                        <a href="cow.html">
+                            <img src="co4.png" height="300px" width="700px">
+                        </a>
+                    </center>
+                    <br>
+                    <p>A heifer is the future cow. The health of the heifer calves depends heavily on the level of care they receive. Every calf born in a dairy farm represents an opportunity to maintain or improve the herd genetically and to increase the economic returns to the farm. The calf gains about 500 gms per day and will weigh 60Kg to 80Kg during 3 to 6 months of age. To match this growth rates, feeding appropriate quantity and quality of feed is the most vital. For calves upto 1 year of age, it is always desirable to give sufficient concentrates in addition to good quality roughage to gain optimum growth rate.</p>
+                </div>
+
+            </div>
+            <footer id="footer">
+                <p>©Copyright 2050 by nobody. All rights reversed.</p>
+                <p>Contact Us:456783423</p>
+                <address>19,Anna Nagar.tirupur-641604.</address>
+            </footer>
+               <script>
+                            const sibt = document.getElementById('sibt');
+                            const loginBox = document.getElementById('loginBox');
+                    
+                            sibt.addEventListener('click', function() {
+                                if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+                                    loginBox.style.display = 'block';
+                                } else {
+                                    loginBox.style.display = 'none';
+                                }
+                            });
+                </script>
+</body>
+</html>

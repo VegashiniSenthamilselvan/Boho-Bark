@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet shop</title>
+   
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One');
+        body 
+        {
+            background-color:white;
+            color: black;
+            font-family:'Sonsie One', cursive;
+            margin: 0;
+            text-align: justify;
+            height: 100vh;
+            width:100%;
+            
+           
+        }
+        header
+        {
+            
+            /*background: linear-gradient(to right, #E6E6FA, #DA70D6);*/
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color: black;
+            padding: 10px 20px;
+            font-family: 'Sonsie One', cursive;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 0 6px 6px rgba(155,154,154);
+            font-size:40px;
+            
+
+        }
+        nav {
+            
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            padding: -90px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 24px;
+            
+        }
+        .lo {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1000;
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .lo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .lo .user {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .lo button {
+            width: 50%;
+            padding: 10px;
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        sibt{
+            height: 20%;
+            width: 20%;
+        }
+        .bf button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'Sonsie One', cursive;
+            margin-left: 198px;
+            margin-top: 60px;
+           
+        }
+        form
+        {
+            font-size: 24px;
+        }
+        .lo form 
+        {
+             font-family: Sonsie One', cursive;
+            
+           
+        }
+        .lo form label
+        {
+            font-family: Sonsie One', cursive;
+            
+        }
+        .lo form input, .lo-form button 
+        {
+            font-family: Sonsie One', cursive;
+        }
+        .pic
+        {
+            margin-top: 10px;
+        }
+        .para
+        {
+            margin-top: -550px;
+            margin-left: 700px;
+        }
+        .para p
+        {
+            text-align:left;
+        }
+        .pr{
+            padding: 20px;
+        }
+        html{
+        scroll-behavior: smooth;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    footer {
+        background: linear-gradient(to left, #E6E6FA, #DA70D6);
+       color: black;
+       text-align: center;
+       padding: 10px 0;
+       margin-top: 40px;
+     }
+       
+    
+    </style>
+</head>
+<body>
+    <header>
+        <p>Boho & Bark</p>
+        <nav>
+            <ul>
+                <p><a href="landingpage.html">HOME</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="landingpage.html">REVIEWS</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="#footer">CONTACT US</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            </ul>
+            </nav>
+
+            <div class="bf">
+                <button id="sibt" style="font-size: 20px;font-family: 'Sonsie One', cursive">Sign In</button>
+            </div>
+      
+            <div class="lo" id="loginBox">
+                <form action="http://127.0.0.1:5500/html/receipe.html" method="post">
+                    <label for="username">Username:</label>
+                    <input class="user" type="text" id="username" name="Username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input class="user" type="password" id="password" name="Password" required><br><br>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>       
+    </header>
+            <div class="pic">
+                <img src="b7.jpg" height="600px" width="700px">
+            </div>
+
+            <div class="para">
+                <h2>Nutritious Options for Your Birds</h2><p><br>Bird Food</p>
+                <br>
+                <p>We also offer accessories like bird feeders so that you can easily feed birds around you. If you're searching for a bird food shop near you, look no further than Supertails. Our collection of bird supplies and other bird accessories will make your day with your bird’s happy chirps.
+                </p>
+                <p>Our Super Deals offers, and discounts across our range of products make sure that the size of your wallet does not compromise the comfort and safety of your pet. Explore bird food feeders, and different types of bird food, from the largest assemblage of bird products available online. We offer same-day delivery in Mumbai, Delhi, and Bengaluru, and our online store cover all the needs of your bird. If you need to return one of our purchases, our simple return policy and excellent customer service will make the process go smoothly. Supertails also provides a platform for you to effortlessly connect with qualified vets and trainers online to address any pet-related difficulties.</p>
+                <br>
+                <img src="f.svg" height="200px" width="700px">
+                <br>
+            </div>
+                <div class="pr">
+                    <center>
+                        <img src="bi2.jpg" height="600px" width="700px">
+                        </center>
+                        <br>
+                       <p>Love Birds Food: Fostering Love and Health</p>
+                       <br>
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;Elevate the bond with your lovebirds by choosing our specially curated love birds food.
+                        Packed with the right blend of nutrients, our food for love birds is designed to enhance their health while celebrating the love they bring to your life.</p>
+                        <br>
+                        <p>Parrot Food: A Feast for Your Feathered Friends</p>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Discover a variety of options for your parrot's favorite food with our premium selection of best parrot food.
+                            Whether it's their bird food pellets or a special treat, we have the perfect choices to keep your parrot delighted.</p>
+                            <br>
+                            <p>Myna Bird Food: Specially Crafted for Mynas</p>
+                            <br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Our exclusive range of mynah bird food, specially crafted to meet the dietary needs of these intelligent and charming birds.
+                                Ensure your mynas receive the nutrition they deserve with our premium offerings.</p>
+                </div>
+               
+                <footer id="footer">
+                    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+                    <p>Contact Us:456783423</p>
+                    <address>19,Anna Nagar.tirupur-641604.</address>
+                </footer>
+          
+               <script>
+                            const sibt = document.getElementById('sibt');
+                            const loginBox = document.getElementById('loginBox');
+                    
+                            sibt.addEventListener('click', function() {
+                                if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+                                    loginBox.style.display = 'block';
+                                } else {
+                                    loginBox.style.display = 'none';
+                                }
+                            });
+                </script>
+</body>
+</html>

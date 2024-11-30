@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet shop</title>
+   
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One');
+        body 
+        {
+            background-color:white;
+            color: black;
+            font-family:'Sonsie One', cursive;
+            margin: 0;
+            text-align: justify;
+            height: 100vh;
+            width:100%;
+            
+           
+        }
+        header
+        {
+            
+            /*background: linear-gradient(to right, #E6E6FA, #DA70D6);*/
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color: black;
+            padding: 10px 20px;
+            font-family: 'Sonsie One', cursive;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 0 6px 6px rgba(155,154,154);
+            font-size:40px;
+            
+
+        }
+        nav {
+            
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            padding: -90px;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 24px;
+            
+        }
+        .lo {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1000;
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .lo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .lo .user {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .lo button {
+            width: 50%;
+            padding: 10px;
+            background: linear-gradient(to left, #E6E6FA, #DA70D6);
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        sibt{
+            height: 20%;
+            width: 20%;
+        }
+        .bf button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'Sonsie One', cursive;
+            margin-left: 198px;
+            margin-top: 60px;
+           
+        }
+        form
+        {
+            font-size: 24px;
+        }
+        .lo form 
+        {
+             font-family: Sonsie One', cursive;
+            
+           
+        }
+        .lo form label
+        {
+            font-family: Sonsie One', cursive;
+            
+        }
+        .lo form input, .lo-form button 
+        {
+            font-family: Sonsie One', cursive;
+        }
+        .pic
+        {
+            margin-top: 10px;
+        }
+        .para
+        {
+            margin-top: -550px;
+            margin-left: 700px;
+        }
+        .para p
+        {
+            text-align:left;
+        }
+        .pr{
+            padding: 20px;
+        }
+        html{
+        scroll-behavior: smooth;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    footer {
+        background: linear-gradient(to left, #E6E6FA, #DA70D6);
+       color: black;
+       text-align: center;
+       padding: 10px 0;
+       margin-top: 40px;
+     }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <p>Boho & Bark</p>
+        <nav>
+            <ul>
+                <p><a href="landingpage.html">HOME</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="landingpage.html">REVIEWS</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="#footer">CONTACT US</a></p>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            </ul>
+            </nav>
+
+            <div class="bf">
+                <button id="sibt" style="font-size: 20px;font-family: 'Sonsie One', cursive">Sign In</button>
+            </div>
+      
+            <div class="lo" id="loginBox">
+                <form action="http://127.0.0.1:5500/html/receipe.html" method="post">
+                    <label for="username">Username:</label>
+                    <input class="user" type="text" id="username" name="Username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input class="user" type="password" id="password" name="Password" required><br><br>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>       
+    </header>
+            <div class="pic">
+                <img src="g8.jpg" height="600px" width="700px">
+            </div>
+            <br><br>
+            <div class="para">
+                <h2>Ensuring Healthy and Happy Herds</h2><p><br>Goat Food</p>
+                <br>
+                <p>Platina Goat & Sheep Feed is a high-quality, balanced compound feed that is manufactured by Bharat Feeds & Extractions Limited. It is available in pellet form and comes packed in 25kg or 50kg bags. The feed contains 20% protein, 4% fat, and all essential vitamins and minerals. It contains bypass fat as well as bypass protein.
+                </p>
+                <p>Platina Goat & Sheep Feed is recommended for goats and sheep of all ages. It can be fed at a rate of 200-300 grams per kilogram of body weight per day. The feed is highly palatable and easy to digest, and it helps to improve weight gain, milk production, and overall health.</p>
+                <br>
+                <img src="f.svg" height="200px" width="700px">
+                <br>
+            </div>
+                <div class="pr">
+                    <center>
+                        <img src="g10.jpg" height="600px" width="700px">
+                        </center>
+                        <br>
+                        <p>How to Feed?</p>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;It can be fed to goats and sheep in a variety of ways. You can feed it dry, mix it with water, or combine it with other feedstuffs. It is important to provide fresh, clean water at all times.</p>
+                        <br>
+                        <p>Why Choose Platina Goat & Sheep Feed?</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;This Feed is the best choice for goats and sheep that require a high-quality, balanced diet. We use high-quality ingredients to make it, ensuring that it incorporates all essential nutrients for growth, development, and milk production. It is also easy to digest and highly palatable, making it a great choice for even the pickiest eaters.</p>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;The nutritional requirement of the sheep & goat is affected by various factors like growth, maintenance, pregnancy, lactation, environment and level of activities. While preparing a ration for them, factors like bulk, palatability, availability, price and digestibility should be considered along with the nutritive quality of the feed. Goats have higher maintenance ration requirement than cattle because of having higher basal metabolic rate. During the last 2 months of pregnancy, the nutritional requirement increases. After 4 days of kidding, the diet can be reduced and made more fibrous to minimize the shock to the udder. After this period, the feeding can be resumed at the normal rate.</p>
+                </div>
+                <footer id="footer">
+                    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+                    <p>Contact Us:456783423</p>
+                    <address>19,Anna Nagar.tirupur-641604.</address>
+                </footer>
+            
+          
+               <script>
+                            const sibt = document.getElementById('sibt');
+                            const loginBox = document.getElementById('loginBox');
+                    
+                            sibt.addEventListener('click', function() {
+                                if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+                                    loginBox.style.display = 'block';
+                                } else {
+                                    loginBox.style.display = 'none';
+                                }
+                            });
+                </script>
+</body>
+</html>
